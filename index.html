@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yevgeniia Vakula — Senior UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">Yevgeniia Vakula</a>
+      <nav class="header__nav">
+        <a href="index.html" class="header__link">Home</a>
+        <a href="#about" class="header__link">About me</a>
+        <a href="#works" class="header__link">My works</a>
+        <a href="recommendations.html" class="header__link">Recommendations</a>
+        <a href="#contact" class="header__link">Contact</a>
+      </nav>
+      <div class="header__actions">
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="header__social" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <button class="header__burger" aria-label="Menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__sticker">
+        <img src="assets/hero-sticker.png" alt="Yevgeniia Vakula" width="154" height="156">
+      </div>
+      <div class="hero__content">
+        <h1 class="title--page hero__title">I'm Yevgeniia Vakula,<br>Senior UI/UX Designer</h1>
+        <p class="hero__subtitle">Passionate about crafting intuitive digital products for over 10 years. Now working from Tallinn, Estonia</p>
+      </div>
+      <a href="#works" class="btn btn--primary">View My Recent Work</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="services__container">
+      <div class="services__intro">
+        <h2 class="title--section services__title">What I do</h2>
+        <p class="services__subtitle">With a background in leading cross-functional design efforts, I now focus on senior-level roles where I can go deep into complex product challenges</p>
+      </div>
+      <div class="services__cards">
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--purple">
+            <img src="assets/icon-analytics.svg" alt="" width="24" height="24">
+          </div>
+          <div class="service-card__content">
+            <h3 class="title--card service-card__title">Product Strategy &amp; UX Architecture</h3>
+            <p class="service-card__text">I help structure complex digital products from the ground up — defining user flows, prioritizing features, and turning business needs into intuitive experiences.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--yellow">
+            <img src="assets/icon-file.svg" alt="" width="24" height="24">
+          </div>
+          <div class="service-card__content">
+            <h3 class="title--card service-card__title">Research-Driven Design</h3>
+            <p class="service-card__text">From stakeholder interviews to usability testing — I translate real user behavior into actionable design decisions that reduce friction and improve performance.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--blue">
+            <img src="assets/icon-web-design.svg" alt="" width="24" height="24">
+          </div>
+          <div class="service-card__content">
+            <h3 class="title--card service-card__title">Interface Design &amp; Prototyping</h3>
+            <p class="service-card__text">I design responsive, accessible, and user-friendly interfaces across platforms — from low-fidelity wireframes to high-fidelity prototypes.</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--green">
+            <img src="assets/icon-paint-board.svg" alt="" width="24" height="24">
+          </div>
+          <div class="service-card__content">
+            <h3 class="title--card service-card__title">Design Systems &amp; UI Consistency</h3>
+            <p class="service-card__text">I build flexible design systems that ensure consistency, accelerate development, and support scalable product growth.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about__container">
+      <h2 class="title--section about__title">More about me</h2>
+      <div class="about__grid">
+        <!-- Left card with intro text and sticker -->
+        <div class="about-card about-card--intro">
+          <p class="about-card__lead">I'm a senior product designer with a strong background in UX, UI, and digital strategy.</p>
+          <img src="assets/sticker-12.png" alt="" class="about-card__sticker about-card__sticker--large" width="238" height="240">
+        </div>
+        <!-- Right column -->
+        <div class="about__right">
+          <!-- Top row with two cards -->
+          <div class="about__top-row">
+            <div class="about-card">
+              <div class="about-card__icon about-card__icon--blue">
+                <img src="assets/location-01.svg" alt="" width="24" height="24">
+              </div>
+              <div class="about-card__content">
+                <h3 class="title--card about-card__title">Based in Tallinn, Estonia</h3>
+                <p class="about-card__text">Open to local and hybrid roles with teams building impactful digital products.</p>
+              </div>
+            </div>
+            <div class="about-card">
+              <div class="about-card__icon about-card__icon--yellow">
+                <img src="assets/brain.svg" alt="" width="24" height="24">
+              </div>
+              <div class="about-card__content">
+                <h3 class="title--card about-card__title">Problem-Solving Mindset</h3>
+                <p class="about-card__text">I turn complex problems into clear, user-centered solutions that deliver impact.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom wide card -->
+          <div class="about-card about-card--wide">
+            <div class="about-card__icon about-card__icon--purple">
+              <img src="assets/computer-phone-sync.svg" alt="" width="24" height="24">
+            </div>
+            <div class="about-card__content">
+              <h3 class="title--card about-card__title">Cross-Platform Experience</h3>
+              <p class="about-card__text">With experience across both web and mobile, I create products that align business goals with real user needs.</p>
+            </div>
+            <img src="assets/sticker-24.png" alt="" class="about-card__sticker about-card__sticker--small" width="153" height="152">
+          </div>
+        </div>
+      </div>
+      <a href="#works" class="btn btn--primary about__cta">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience">
+    <div class="experience__container">
+      <div class="experience__intro">
+        <h2 class="title--section experience__title">My experiences</h2>
+        <p class="experience__text">I've worked with both startups and long-established digital products, leading design efforts from discovery through execution.</p>
+        <p class="experience__text">My experience includes team collaboration, roadmap planning, user research, and design system creation.</p>
+        <p class="experience__text">I enjoy tackling complex product challenges that require both strategic thinking and detailed design execution.</p>
+        <a href="#" class="experience__link">
+          View Case Study
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="timeline">
+        <div class="timeline__item timeline__item--green">
+          <div class="timeline__date">Jun 2017 – Present</div>
+          <div class="timeline__marker">
+            <span class="timeline__dot"></span>
+            <span class="timeline__line"></span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="title--card timeline__role">Lead UI/UX Designer</h3>
+            <p class="timeline__company">DIGIS<br>Odessa, Ukraine · Full-time · Offline &amp; Online</p>
+            <p class="timeline__desc">Led design for complex SaaS, B2B, and CRM products across fintech, healthcare, and e-commerce.</p>
+            <p class="timeline__desc">Built and scaled design systems, conducted research, created prototypes, and validated final designs with users and stakeholders.</p>
+            <p class="timeline__desc">Acted as team lead and design ops owner — hiring, mentoring, and setting internal design processes.</p>
+            <p class="timeline__desc">Key projects: ticketing platform back office and seller admin portal.</p>
+          </div>
+        </div>
+        <div class="timeline__item timeline__item--blue">
+          <div class="timeline__date">Sep 2020 – Feb 2023</div>
+          <div class="timeline__marker">
+            <span class="timeline__dot"></span>
+            <span class="timeline__line"></span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="title--card timeline__role">UI/UX Design Teacher</h3>
+            <p class="timeline__company">Hillel IT School<br>Odessa, Ukraine · Full-time · Offline &amp; Online</p>
+            <p class="timeline__desc">Taught beginner and advanced UX/UI courses both online and offline.</p>
+            <p class="timeline__desc">Created hands-on materials, mentored students, and focused on usability-first design thinking.</p>
+          </div>
+        </div>
+        <div class="timeline__item timeline__item--yellow">
+          <div class="timeline__date">Jan 2018 – Apr 2019</div>
+          <div class="timeline__marker">
+            <span class="timeline__dot"></span>
+            <span class="timeline__line"></span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="title--card timeline__role">Lead Designer</h3>
+            <p class="timeline__company">Jazz Do IT Conference<br>Odessa, Ukraine · Full-time · Offline</p>
+            <p class="timeline__desc">Designed the full brand experience for a tech event: identity, site, and physical space.</p>
+            <p class="timeline__desc">Worked with a small team across digital and offline touchpoints.</p>
+          </div>
+        </div>
+        <div class="timeline__item timeline__item--purple">
+          <div class="timeline__date">Mar 2016 – Jun 2017</div>
+          <div class="timeline__marker">
+            <span class="timeline__dot"></span>
+            <span class="timeline__line"></span>
+          </div>
+          <div class="timeline__content">
+            <h3 class="title--card timeline__role">Web Designer</h3>
+            <p class="timeline__company">4limes<br>Odessa, Ukraine · Full-time · Offline</p>
+            <p class="timeline__desc">Designed websites and brand visuals for clients in various industries.</p>
+            <p class="timeline__desc">Gained key skills in UI, briefing, and client communication.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works Section -->
+  <section class="works" id="works">
+    <div class="works__container">
+      <div class="works__intro">
+        <h2 class="title--section works__title">Latest Work Highlights</h2>
+        <p class="works__subtitle">These are some of my latest projects — showing how I solve<br>real product challenges.</p>
+      </div>
+      <div class="works__grid">
+        <article class="work-card">
+          <div class="work-card__image">
+            <img src="assets/work-card-ticket-marketplace.png" alt="Ticket Marketplace Backoffice Redesign - showing order management, listing forms, and seat map interfaces">
+          </div>
+          <div class="work-card__content">
+            <h3 class="title--card work-card__title">Ticket Marketplace Backoffice Redesign</h3>
+            <p class="work-card__text">Redesigned a 10+ year old backoffice system, reducing task completion time by 85% and improving user satisfaction from 6/10 to 8.5/10.</p>
+            <a href="ticket-marketplace-backoffice-redesign.html" class="work-card__link">
+              View Case Study
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__image">
+            <img src="assets/case02-preview.png" alt="Factoring Platform MVP - showing registration, dashboard, and approval workflow interfaces">
+          </div>
+          <div class="work-card__content">
+            <h3 class="title--card work-card__title">Factoring Platform MVP: Research-Driven Design</h3>
+            <p class="work-card__text">Designed Saudi Arabia's first factoring platform MVP from scratch — 12 personas, 90+ screens, and 4 core workflows in just 5–6 weeks.</p>
+            <a href="case-02.html" class="work-card__link">
+              View Case Study
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__image"></div>
+          <div class="work-card__content">
+            <h3 class="title--card work-card__title">Cerebro Education: LMS for Live Design Courses</h3>
+            <p class="work-card__text">Designed a full LMS from scratch as sole designer and CEO — role-specific experiences for students and teachers, Zoom integration, structured homework review, ~50–60 screens.</p>
+            <a href="case-03.html" class="work-card__link">
+              View Case Study
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-card__image"></div>
+          <div class="work-card__content">
+            <h3 class="title--card work-card__title">Project Title</h3>
+            <p class="work-card__text">Gain valuable insights into user behavior, website performance, and key business metrics to optimize your digital presence.</p>
+            <a href="case-04.html" class="work-card__link">
+              View Case Study
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 17L17 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 7H17V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process">
+    <div class="process__container">
+      <h2 class="title--section process__title">How I Approach Every Project</h2>
+      <div class="process__cards is-collapsed">
+        <div class="process-card">
+          <span class="process-card__badge process-card__badge--1">01</span>
+          <div class="process-card__content">
+            <h3 class="title--card process-card__title">Discovery &amp; Research</h3>
+            <p class="process-card__text">I explore product goals and user needs through research, interviews, and analysis to define clear problem spaces.</p>
+          </div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__badge process-card__badge--2">02</span>
+          <div class="process-card__content">
+            <h3 class="title--card process-card__title">Ideation &amp; Concepting</h3>
+            <p class="process-card__text">I generate early ideas through sketches, flows, and maps — aligning direction before moving into visuals.</p>
+          </div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__badge process-card__badge--3">03</span>
+          <div class="process-card__content">
+            <h3 class="title--card process-card__title">Structure &amp; UX Architecture</h3>
+            <p class="process-card__text">I create navigation, flows, and structure to ensure clarity, usability, and scalability across the product.</p>
+          </div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__badge process-card__badge--4">04</span>
+          <div class="process-card__content">
+            <h3 class="title--card process-card__title">Interface Design &amp; Prototyping</h3>
+            <p class="process-card__text">I design accessible, responsive UI and build prototypes to validate ideas and drive alignment.</p>
+          </div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__badge process-card__badge--5">05</span>
+          <div class="process-card__content">
+            <h3 class="title--card process-card__title">Testing &amp; Iteration</h3>
+            <p class="process-card__text">I test designs with users and teams, gather feedback, and refine solutions based on real insights.</p>
+          </div>
+        </div>
+        <div class="process-card">
+          <span class="process-card__badge process-card__badge--6">06</span>
+          <div class="process-card__content">
+            <h3 class="title--card process-card__title">Handoff &amp; Support</h3>
+            <p class="process-card__text">I prep clean design files and specs, and support dev teams during implementation and QA.</p>
+          </div>
+        </div>
+      </div>
+      <button class="process__toggle" aria-expanded="false">
+        <span class="process__toggle-more">Show more</span>
+        <span class="process__toggle-less">Show less</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <!-- Let's Connect Section -->
+    <div class="footer__connect">
+      <div class="footer__connect-header">
+        <h2 class="title--section footer__title">Let's Connect</h2>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="footer__social" aria-label="LinkedIn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 9H2V21H6V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__cards">
+        <div class="footer__card">
+          <div class="footer__card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1469 21.5901 20.9046 21.7335 20.6408 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77383 17.3147 6.72533 15.2662 5.19 12.85C3.49998 10.2412 2.44824 7.271 2.12 4.18C2.09501 3.90347 2.12788 3.62476 2.21651 3.36162C2.30513 3.09849 2.44757 2.85669 2.63477 2.65162C2.82196 2.44655 3.04981 2.28271 3.30379 2.17052C3.55778 2.05833 3.83234 2.00026 4.11 2H7.11C7.59531 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04208 3.23945 9.11 3.72C9.23662 4.68007 9.47145 5.62273 9.81 6.53C9.94455 6.88792 9.97366 7.27691 9.89391 7.65088C9.81415 8.02485 9.62886 8.36811 9.36 8.64L8.09 9.91C9.51356 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9752 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="footer__card-content">
+            <span class="footer__card-label">Phone</span>
+            <a href="tel:+37253895346" class="footer__card-value">+372 5389 5346</a>
+          </div>
+        </div>
+        <div class="footer__card">
+          <div class="footer__card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="footer__card-content">
+            <span class="footer__card-label">Email</span>
+            <a href="mailto:yevgenia.vakula@gmail.com" class="footer__card-value">yevgenia.vakula@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer__copyright">
+      <p>&copy; 2026 Yevgeniia Vakula</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
