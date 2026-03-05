@@ -617,11 +617,17 @@ strong {
   margin-top: var(--space-lg);
 }
 
+.experience__links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-top: var(--space-lg);
+}
+
 .experience__link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: var(--space-lg);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
@@ -1041,6 +1047,12 @@ strong {
   margin: 0;
 }
 
+.footer__connect-actions {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
 .footer__social {
   color: var(--color-text-dark);
   display: flex;
@@ -1050,6 +1062,28 @@ strong {
 
 .footer__social:hover {
   color: #005fd8;
+}
+
+.footer__cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #005fd8;
+  border-radius: var(--radius-sm);
+  transition: opacity var(--transition-fast);
+}
+
+.footer__cv-link:hover {
+  opacity: 0.8;
+}
+
+.footer__cv-link svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
 
 .footer__social svg {
@@ -2404,6 +2438,54 @@ strong {
   letter-spacing: 0.02em;
 }
 
+/* Impact row (two-column layout) */
+.case-impact-row {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.case-impact-grid--flex {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Qualitative Changes card */
+.case-qualitative-changes {
+  background-color: #f7f7f7;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex-shrink: 0;
+}
+
+.case-qualitative-changes__title {
+  margin: 0;
+}
+
+.case-qualitative-changes__items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+}
+
+.case-qualitative-changes__item {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #005fd8;
+  text-align: center;
+}
+
 /* ============================================
    Section Header Spacing Modifiers
    ============================================ */
@@ -3145,6 +3227,14 @@ strong {
     flex: 1 1 calc(50% - 8px);
     min-width: 140px;
   }
+
+  .case-impact-row {
+    flex-direction: column;
+  }
+
+  .case-qualitative-changes {
+    width: 100%;
+  }
   
   /* Modals grid tablet */
   .case-modals-grid {
@@ -3536,7 +3626,7 @@ strong {
     gap: var(--space-lg);
   }
   
-  .experience__link {
+  .experience__links {
     margin-top: 0;
   }
 }
