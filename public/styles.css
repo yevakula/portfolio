@@ -845,6 +845,45 @@ strong {
   height: 24px;
 }
 
+.work-card--placeholder {
+  cursor: default;
+}
+
+.work-card--placeholder:hover {
+  transform: none;
+}
+
+.work-card__image--placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.work-card__placeholder-icon {
+  width: 109px;
+  height: 109px;
+  object-fit: contain;
+}
+
+.work-card__placeholder-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 188px;
+  padding: 8px;
+  background-color: #fddecf;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  color: #66321c;
+}
+
 /* ============================================
    Process Section
    ============================================ */
